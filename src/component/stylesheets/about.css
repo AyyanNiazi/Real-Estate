@@ -1,0 +1,25 @@
+.about-upper{
+    background: url('../images/about.jpeg');
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    padding-left: 20px;
+    background-size: 100%;
+    opacity: 0.5;
+    top: 0px;
+
+}
+.about-img-text {
+    padding: 150px;
+    color: #ffffff;
+}
+.about-img-text p,h3{
+    /* padding: 150px; */
+    color: #ffffff;
+    font-weight: 700
+}
+@media  (min-width: 800px){
+    .about-upper{
+        width: 100%
+    }
+}

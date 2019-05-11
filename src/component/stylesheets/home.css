@@ -1,0 +1,9 @@
+.home-main .carousel-item img{
+    height: 100vh;
+    background-position: fixed
+}
+
+.my-navbar{
+    background-color: transparent!important;
+    /* height: 5px; */
+}
