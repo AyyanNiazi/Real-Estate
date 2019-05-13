@@ -10,9 +10,12 @@ class Contact extends Component {
     render() {
         return (
             <div className='contact-body' >
-                <section>
-                    <img src={contact} style={{ height: '70vh' }} class=" w-100 img-fluid" alt="Responsive image" />
-                </section>
+                <section className='contact-upper col-lg-12' >
+                <div className='contact-img-text'>
+                    <h1>Contact Us </h1>
+                    {/* <p>A Real Estate Organization You Can Trust</p> */}
+                </div>
+               </section>
 
                 <section className='sec-2' >
                     <div class='container' >

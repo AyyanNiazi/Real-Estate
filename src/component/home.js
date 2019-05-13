@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import h1 from './images/h1.jpeg';
-import h2 from './images/h2.jpeg';
-import h3 from './images/h3.jpeg';
-import h4 from './images/h4.jpeg';
+import home1 from './images/home1.jpg';
+import home2 from './images/home2.jpg';
+import home3 from './images/home3.jpg';
+import home4 from './images/home4.jpg';
 import './stylesheets/home.css'
 
 class Home extends Component {
@@ -10,6 +10,7 @@ class Home extends Component {
         super(props);
         this.state = {}
     }
+    
     render() {
         return (
             <div>
@@ -22,14 +23,14 @@ class Home extends Component {
                         </ol>
                         <div class="carousel-inner home-main ">
                             <div class="carousel-item active">
-                                <img class="d-block w-100 h-10" src={h1} alt="First slide"/>
+                                <img class="d-block w-100 h-10" src={home4} alt="First slide"/>
                             </div>
                            
                                 <div class="carousel-item">
-                                    <img class="d-block w-100 h-50" src={h3} alt="Second slide"/>
+                                    <img class="d-block w-100 h-50" src={home2} alt="Second slide"/>
                                 </div>
                                     <div class="carousel-item">
-                                        <img class="d-block w-100 h-100" src={h4} alt="Third slide"/>
+                                        <img class="d-block w-100 h-100" src={home3} alt="Third slide"/>
                                 </div>
                                     </div>
                                     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">

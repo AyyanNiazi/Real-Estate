@@ -1,6 +1,6 @@
-.home-main .carousel-item img{
-    height: 100vh;
-    background-position: fixed
+.carousel-item img{
+    height: 70vh;
+    /* background-size: 50% 50%; */
 }
 
 .my-navbar{
