@@ -1,4 +1,12 @@
-.my-navbar{
-    background-color: transparent!important;
-    /* height: 500px; */
+
+.nav-item{
+    margin: 0px 15px;
+    background: transparent;
+}
+#my-item{
+    /* color: red */
+    transition: 0.5s    
+}
+#my-item:hover{
+    color: #10c0df
 }

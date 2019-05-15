@@ -19,6 +19,16 @@ class Home extends Component {
         this.state = {}
     }
 
+    componentDidMount() {
+        console.log(this.props.history.push)
+    }
+    about = () => {
+        this.props.history.push('/about')
+    }
+    properties = () => {
+       this.props.history.push('/properties')
+    }
+    
     render() {
         return (
             <div>
@@ -60,8 +70,9 @@ class Home extends Component {
                                 <p style={{ fontSize: '1.769em' }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at fermentum felis. Phasellus eget vehicula sem. Duis malesuada sapien nec quam gravida accumsan. Nam vel quam in turpis ultrices </p>
                             </div>
                             <div className='col-lg-4 col-xs-12 col-md-4 col-sm-12' >
-                                <button type="button" class=" about-btn my-btn btn btn-outline-info">
-                                    <Link>About us<i class="fa fa-arrow-right"></i></Link>
+                                <button type="button" class=" about-btn my-btn btn btn-outline-info"
+                                   onClick={this.about.bind(this)} >
+                                    About Us<i class="fa fa-arrow-right" ></i>
                                 </button>
                                 {/* <button type="button" class=" my-btn btn btn-outline-warning">Warning</button> */}
 
@@ -169,15 +180,16 @@ class Home extends Component {
                     </div>
                 </section>
 
-                <section class='sec-5 container ' >
+                <section class='sec-5 container' >
                     <div className='row' >
                         <div className='col-lg-8 col-xs-12 col-md-8 col-sm-12' >
                             <h2 style={{ fontSize: '2.099em', fontWeight: '700', color: '#2e3e49' }} >Featured Properties</h2><br />
                             <p style={{ fontSize: '1.769em' }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at fermentum felis. </p>
                         </div>
                         <div className='col-lg-4 col-xs-12 col-md-4 col-sm-12' >
-                            <button type="button" class=" property-btn my-btn btn btn-outline-info">
-                                <Link>View All properties<i class="fa fa-arrow-right"></i></Link>
+                            <button type="button" class=" property-btn my-btn btn btn-outline-info"
+                               onClick={this.properties .bind(this)} >
+                                View All properties<i class="fa fa-arrow-right"></i>
                             </button>
                             {/* <button type="button" class=" my-btn btn btn-outline-warning">Warning</button> */}
 
@@ -186,44 +198,78 @@ class Home extends Component {
                     {/* 2nd */}
                     <div className='row' style={{ marginTop: '30px' }} >
                         <div className=' feature-1 col-lg-7 col-sm-12 col-xs-12' >
-                            <div class='feature-1-div' >
-                                <ul className='actions' >
-                                    <li>h</li>
-                                    <li>h</li>
-                                    <li>h</li>
-                                </ul>
+                            <div className='top' >
+                                <button className='feature'> Featured  </button>
+                                <button className='for-rent' > For Rent </button>
+                                <button className='feature-new' > New </button>
+                            </div>
+
+                            <div className='bottom' >
+                                <h5>Modern Appartment With Ocean View</h5>
+                                <p style={{ color: '#fff' }} >44,00000  2 bd 2 ba 1900 sq ft</p>
                             </div>
                         </div>
-                        <div className=' feature-2 col-lg-5 col-sm-12 col-xs-12' >
 
+                        <div className=' feature-2 col-lg-5 col-sm-12 col-xs-12' >
+                            <div className='top' >
+                                <button className='feature'> Featured  </button>
+                                <button className='for-rent' > For Rent </button>
+                                <button className='hot-offer' > Hot offer </button>
+                            </div>
+
+                            <div className='bottom' >
+                                <h5>Modern Appartment With Ocean View</h5>
+                                <p style={{ color: '#fff' }}>44,00000  2 bd 2 ba 1900 sq ft</p>
+                            </div>
                         </div>
                     </div>
                     <div className='row' >
                         <div className=' feature-3 col-lg-5 col-sm-12 col-xs-12' >
-                            <div class='feature-1-div' >
-                                <ul className='actions' >
-                                    <li>h</li>
-                                    <li>h</li>
-                                    <li>h</li>
-                                </ul>
+                            <div className='top' >
+                                <button className='feature'> Featured  </button>
+                                <button className='for-rent' > For Rent </button>
+                                <button className='feature-new' > New </button>
+                            </div>
+
+                            <div className='bottom' >
+                                <h5>Modern Appartment With Ocean View</h5>
+                                <p class='para' style={{ color: '#fff' }}>44,00000  2 bd 2 ba 1900 sq ft</p>
                             </div>
                         </div>
-                        <div className=' feature-4 col-lg-7 col-sm-12 col-xs-12' >
 
+                        <div className=' feature-4 col-lg-7 col-sm-12 col-xs-12' >
+                            <div className='top' >
+                                <button className='feature'> Featured  </button>
+                                <button className='for-rent' > For Rent </button>
+                                <button className='feature-new' > New </button>
+                            </div>
+
+                            <div className='bottom' >
+                                <h5>Modern Appartment With Ocean View</h5>
+                                <p style={{ color: '#fff' }} >44,00000  2 bd 2 ba 1900 sq ft</p>
+                            </div>
                         </div>
                     </div>
 
                     {/* stay in touch with us */}
-                    <div className='row' >
-                        <div className='col-lg-4 col-xs-12 col-sm-12 ' > 
+                    
+                    <div className='row stay-with ' >
+                        <div className='heading col-lg-3 col-xs-12 col-sm-12 ' style={{textAlign: 'left'}}>
                             <h4> Stay in Touch With us </h4>
                         </div>
-                        <form className='col-lg-8 col-xs-12 col-sm-12 '   >
-                            <div class="form-group">
-                                
-                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email"/>
-    
+                        <form className='col-lg-9 col-xs-12 col-sm-12 '   >
+                        <div  className='row '>
+                            <div class="input-icon-wrap col-lg-9 col-xs-9 col-sm-9 ">
+                                <span class="input-icon"><span class="fa fa-envelope"></span></span>
+                                    <input type="text" class="input-with-icon" id="form-name"/>
                             </div>
+                            
+                            <div className='col-lg-3 col-xs-3 col-sm-3 ' style={{textAlign: 'right',width: '200px'}}>
+                            <button type="button" class="  my-btn btn btn-outline-info" >
+                                Submit  <i class="fa fa-arrow-right"></i>
+                            </button>
+                            </div> 
+                        </div>
                         </form>
                     </div>
                     </section>

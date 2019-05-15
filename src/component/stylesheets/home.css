@@ -1,3 +1,7 @@
+body{
+    background-color: whitesmoke
+}
+
 .carousel-item img{
     height: 70vh;
     /* background-size: 50% 50%; */
@@ -15,11 +19,13 @@
 .my-btn{
     background-color: transparent;
     background: transparent!important;
-    border: 2px solid #1ebbd7!important
+    border: 2px solid #1ebbd7!important;
+    font-weight: 500;
+    font-size: 1.234em;
 }
 .my-btn:hover{
     background: #1ebbd7!important;
-    color: #c72626!important
+    color: #fff!important
 }
 .about-btn{
     margin-top: 190px;
@@ -86,47 +92,102 @@
 
 .sec-5{
     margin-top: 150px;
+    /* padding: 0px; */
+    /* margin-left:0px */
 }
 .property-btn{
-    margin-top: 80px;
-    margin-right: -200px;
+    position: absolute;
+    right: 0px;
+    bottom: 18px;
+    /* margin-right: -200px; */
     text-align: right;
 }
 .feature-1 {
     background-image: url('../images/h2.jpeg');
     background-size: 100% 100%;
     height: 320px;
+    cursor: pointer
 }
-.feature-1-div{
-    /* position: absolute;
-    left: 0px;
-    top: 0px; */
-}
+
 .feature-2{
     background-image: url('../images/h1.jpeg');
     background-size: 100% 100%;
     height: 320px;
+    cursor: pointer
 }
 .feature-3{
     background-image: url('../images/h3.jpeg');
     background-size: 100% 100%;
     height: 320px;
+    cursor: pointer
+
 }
 .feature-4{
     background-image: url('../images/h4.jpeg');
     background-size: 100% 100%;
     height: 320px;
+    cursor: pointer
 }
-.actions li {
+.feature-1:hover,.feature-2:hover,.feature-3:hover,.feature-4:hover{opacity: 1;background: rgb(184, 178, 178))}
+.top{
+    position: absolute;
+    top: 10px;
+    left: 3;
+}
+.top p{
+    color : #fff!important
+}
+.bottom{
+    padding: 4px;
+    color: #fff;
+    position: absolute;
+    bottom: 4px;
+    left: 5px;
+}
+.bottom:hover{background: #cbb492; border-radius: 5px;height: fit-content;}
+.bottom .para:hover{background: #cbb492; border-radius: 5px;}
+
+.feature-new,.feature,.for-rent,.hot-offer{
     display: inline;
-    width: 30px;
-    height: 30px;
-    line-height: 30px;
-    border-radius: 4px;
-    background-color: #000;
-    opacity: .6;
-    text-align: center;
+    padding: 1px 6px;
+    border-radius: 6px;
+    border: none;
+    line-height: 20px;
+    font-weight: 400;
+    color: #fff;
+    margin: 0px 3px;   
 }
+.feature-new:hover,.feature:hover,.for-rent:hover,.hot-offer:hover{
+     box-shadow:  4px 4px 12px #888;
+}
+.feature{background-color: #1ebbd7}
+.for-rent{background-color:rgb(15, 13, 13);}
+.feature-new{background-color: #cbb492}
+.hot-offer{background-color: rgb(238, 15, 15); }
+
+
+.input-icon-wrap {
+    border: 1px solid #ddd;    
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .input-icon {
+    background: #ddd;
+  }
+  
+  .input-with-icon {
+    border: none;
+    flex: 1;
+  }
+
+  .stay-with{
+    margin-top: 150px;
+  }
+  .stay-with .heading{
+      margin-left: 0xp;
+      height: fit-content;
+  }
 @media (min-wdth: 360px){
     .about-btn{
         text-align: center;
