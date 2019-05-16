@@ -13,7 +13,7 @@ class Header extends Component {
                 {/* navbar starting here */}
 
                 <nav class="navbar  navbar-expand-lg navbar-light"  style={{backgroundColor: 'transparen'}}>
-                    <Link class="navbar-brand" to='/' >Dream House </Link>
+                    <Link class="navbar-brand" to='/' style={{fontSize: '1.489em'}} >Dream House </Link>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon" ></span>
                     </button>
@@ -21,7 +21,7 @@ class Header extends Component {
                     <div class=" collapse navbar-collapse  " id="navbarNav">
                         <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                                <Link class="nav-link " id='my-item' to='/'  >Home </Link>
+                                <Link class="nav-link " id='my-item' to='/' >Home </Link>
                             </li>
                             <li class="nav-item">
                                 <Link class="nav-link " id='my-item' to='/properties' >Properties </Link>
@@ -30,7 +30,7 @@ class Header extends Component {
                                 <Link class="nav-link " id='my-item' to='/about' >About </Link>
                             </li>
                             <li class="nav-item">
-                                <Link class="nav-link " id='my-item' to='/contact'>Contact</Link>
+                                <Link class="nav-link " id='my-item' to='/contact' >Contact</Link>
                             </li>
                         </ul>
                     </div>
