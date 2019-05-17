@@ -1,6 +1,16 @@
+.logo-text{
+    font-size: 1.456em;
+    padding-top: 1900px;
+    font-weight: 700;
+    transition: 0.7s
+}
+
+.logo-text:hover{
+    color: #10c0df
+}
 
 .nav-item{
-    margin: 10px 15px;
+    margin: 4px 15px;
     font-size: 1.011em;
     background: transparent;
 }

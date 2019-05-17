@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
+import logo from './images/logo.png'
 import './stylesheets/header.css'
 
 class Header extends Component {
@@ -13,7 +14,7 @@ class Header extends Component {
                 {/* navbar starting here */}
 
                 <nav class="navbar  navbar-expand-lg navbar-light"  style={{backgroundColor: 'transparen'}}>
-                    <Link class="navbar-brand" to='/' style={{fontSize: '1.489em'}} >Dream House </Link>
+                    <Link class="navbar-brand" to='/'  > <img src={logo} width='70' height='68' /> <span class='logo-text' >Dream House</span>  </Link>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon" ></span>
                     </button>

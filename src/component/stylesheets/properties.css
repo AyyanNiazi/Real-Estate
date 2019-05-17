@@ -1,0 +1,28 @@
+.my-prop-btn{
+    background-color: #1ebbd7;  
+    border: 2px solid ;
+    font-weight: 500;
+    font-size: 1.234em;
+    padding: 4px 35px;
+    transition: 0.3s!important;
+    display: inline-;
+}
+.my-prop-btn:hover{
+    background-color: #0bd3f7;
+    border: 2px solid #0bd3f7
+}
+
+.sec-prop-2{
+    background: #fff;
+    height: fit-content;
+    /* margin-top: -80px; */
+    z-index: 99999999;
+    padding-top: 30px;
+    box-shadow: 4px 4px 12px #888;
+}
+
+.sec-prop-3{
+    margin-top: 80px;
+}
+/* slider */
+
