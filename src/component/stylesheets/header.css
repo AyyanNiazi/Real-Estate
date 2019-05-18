@@ -4,7 +4,10 @@
     font-weight: 700;
     transition: 0.7s
 }
+.my-nav{
+    z-index: 1;
 
+}
 .logo-text:hover{
     color: #10c0df
 }

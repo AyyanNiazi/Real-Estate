@@ -2,8 +2,19 @@ body{
     background-color: whitesmoke
 }
 
+.home-sec-1{
+    margin-top: -90px;  
+    z-index: -1px!important;
+}
+
 .carousel-item img{
-    height: 70vh;
+    /* height: 700px; */
+    z-index: -1;
+    background-size: 100% 100%;
+}
+.carousel-item{
+    /* height: 700px; */
+    z-index: -1;
     /* background-size: 50% 50%; */
 }
 
@@ -83,7 +94,7 @@ body{
 .new-home-div-3{
     background-repeat: no-repeat!important;
     /* height: 100%; */
-    background-size: 100% 100%;
+    background-size: 100% 100% !important;
     background: url('../images/home5.jpeg')
 }
 

@@ -15,8 +15,8 @@
 .sec-prop-2{
     background: #fff;
     height: fit-content;
-    /* margin-top: -80px; */
-    z-index: 99999999;
+    margin-top: -80px;
+    z-index: 1px;
     padding-top: 30px;
     box-shadow: 4px 4px 12px #888;
 }

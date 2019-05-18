@@ -43,14 +43,14 @@ class Properties extends Component {
                         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                         <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
                     </ol>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img class="d-block w-100" src={home4} alt="First Home image" />
+                    <div class="carousel-inner" style={{zIndex: '-1px'}} >
+                        <div class="carousel-item active" style={{zIndex: '-1px'}} >
+                            <img class="d-block w-100" src={home4} alt="First Home image" style={{zIndex: '-1px'}}/>
                         </div>
-                        <div class="carousel-item">
+                        <div class="carousel-item" style={{zIndex: '-1px'}}>
                             <img class="d-block w-100" src={home2} alt="Second home image" />
                         </div>
-                        <div class="carousel-item">
+                        <div class="carousel-item" style={{zIndex: '-1px'}}>
                             <img class="d-block w-100" src={home3} alt="Third home image" />
                         </div>
                     </div>

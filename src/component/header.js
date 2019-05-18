@@ -10,7 +10,7 @@ class Header extends Component {
     }
     render() {
         return (
-            <div>
+            <div class='my-nav' >
                 {/* navbar starting here */}
 
                 <nav class="navbar  navbar-expand-lg navbar-light"  style={{backgroundColor: 'transparen'}}>
