@@ -5,7 +5,12 @@
 p{
     color: #606d75;
 }
-
+.footer-p:hover{
+  transition: 0.7s
+}
+.footer-p:hover{
+  color: #0cbbda;  font-size: 1.011em;
+}
 .col-md-4{
     /* margin-right: -12px; */
     text-align: right

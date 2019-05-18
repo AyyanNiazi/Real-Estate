@@ -10,10 +10,19 @@ import Footer from '../component/footer'
 class Routes extends Component {
     constructor(props) {
         super(props);
-        this.state = {  }
+        this.state = { 
+            loading: true,
+         }
+    }
+
+    componentDidMount() {
+        this.setState({loading: false})
     }
     render() { 
-        return ( 
+        
+        return (
+            this.state.loading === true ? <h1 style={{fontSize: '5.389em'}}>Loading</h1>
+            : 
             <div>
                 <BrowserRouter>
                     <Header />

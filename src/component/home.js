@@ -35,9 +35,9 @@ class Home extends Component {
                 <section className='home-sec-1'>
                     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                         <ol class="carousel-indicators">
-                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                            <li data-target="#carouselExampleIndicators" style={{position: 'absolute'}} data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" style={{position: 'absolute'}} data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" style={{position: 'absolute'}} data-slide-to="2"></li>
                         </ol>
                         <div class="carousel-inner home-main ">
                             <div class="carousel-item active">
@@ -51,11 +51,11 @@ class Home extends Component {
                                 <img class="d-block w-100 h-100" src={home3} alt="Third slide" />
                             </div>
                         </div>
-                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <a class="carousel-control-prev" style={{position: 'relative'}} href="#carouselExampleIndicators" role="button" data-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="sr-only">Previous</span>
                         </a>
-                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <a class="carousel-control-next" style={{position: 'relative'}} href="#carouselExampleIndicators" role="button" data-slide="next">
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="sr-only">Next</span>
                         </a>
@@ -83,15 +83,17 @@ class Home extends Component {
 
                 <section className='sec-3'>
                     <div className='row' >
-                        <div className='new-home-div col-lg-4 col-xs-12 col-md-4 col-sm-12' >
+                        <div className='new-home-div  col-xs-12  col-sm-4' >
                             <h2 className='new-home'  >New<span >Homes</span></h2>
                         </div>
-                        <div className='new-home-div-2 col-lg-4 col-xs-12 col-md-4 col-sm-12' >
+                        <div className='new-home-div-2 col-xs-12  col-sm-4' >
                             <h2 className='new-home'  >New<span >Homes</span></h2>
                             <p className='new-home-p'>2 bed Rooms <br /> 4 bathrroms <br /> 1200 sqft</p>
                         </div>
-                        <div className='new-home-div-3 col-lg-4 col-xs-12 col-md-4 col-sm-12' >
-                            <h2 className='new-home'  >Newdsd<span >Homes</span></h2><br />
+                        <div className='new-home-div-3 col-xs-12  col-sm-4' >
+                            <h2 className='new-home'  >New<span >Homes</span></h2><br />
+                            <p className='new-home-p'>2 bed Rooms <br /> 4 bathrroms <br /> 1200 sqft</p>
+
 
                         </div>
                     </div>

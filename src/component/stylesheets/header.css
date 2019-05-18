@@ -6,8 +6,11 @@
 }
 .my-nav{
     z-index: 1;
+    position: relative;
+    width: 100%;
 
 }
+
 .logo-text:hover{
     color: #10c0df
 }
@@ -16,6 +19,8 @@
     margin: 4px 15px;
     font-size: 1.011em;
     background: transparent;
+    z-index: 1;
+    position: relative;
 }
 #my-item{
     /* color: red */
@@ -24,3 +29,11 @@
 #my-item:hover{
     color: #10c0df
 }
+
+.scrolled{
+	position: fixed;
+	top: 0;
+	width:  100%;
+	z-index: 100000;
+	background-color: #fff;
+} 

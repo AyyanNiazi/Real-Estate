@@ -7,13 +7,19 @@ class Footer extends Component {
         super(props);
         this.state = {}
     }
+
+    profile = (e) => {
+        // this.props.history.push('/about')
+        window.location.href= 'https://github.com/AyyanNiazi/Real-Estate/'
+        console.log(window.location)
+    }
     render() {
         return (
             <div className='footer-main' >
              <div className='container' > 
                 <div class="row">
                     <div class="col-md-8 col-xs-12 col-sm-12">
-                        <p>Dream House-All rights reserved</p>
+                        <p class='footer-p' >Dream House-All rights reserved |<span onClick={this.profile.bind(this)} style={{cursor: 'pointer'}}>  Designed & Developed by Mopfhs </span></p>
                     </div>
                     <div class="col-md-4 col-xs-12 col-sm-12">
                         <p>Follow us

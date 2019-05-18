@@ -6,11 +6,34 @@ import './stylesheets/header.css'
 class Header extends Component {
     constructor(props) {
         super(props);
-        this.state = {}
+        this.state = {         
+            scrollled: '',
+            
+        }
+    }
+
+    componentDidMount(){
+        window.addEventListener('scroll', ()=> {
+            const isTop = window.scrollY < 100;
+            if (isTop !== true){
+                this.setState({  scrolled: true   })
+            }
+            else{
+                this.setState({ scrolled: false   })
+            }
+        })
+        // window.addEventListener('resize', this.handleResize.bind(this));
+    }
+    
+    componentWillMount(){
+        window.removeEventListener('scroll ', ()=>{
+        })
+        // window.removeEventListener('resize', this.handleResize.bind(this));
     }
     render() {
         return (
-            <div class='my-nav' >
+            <div  className={this.state.scrolled ? ' nav scrolled' : 'navreact'} >
+            <div class='my-nav'   >
                 {/* navbar starting here */}
 
                 <nav class="navbar  navbar-expand-lg navbar-light"  style={{backgroundColor: 'transparen'}}>
@@ -36,6 +59,7 @@ class Header extends Component {
                         </ul>
                     </div>
                 </nav>
+                </div>
             </div>
         );
     }
