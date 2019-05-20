@@ -128,7 +128,7 @@ class Properties extends Component {
                                 </TextField>
                             </div><div className='col-lg-2 col-md-2' >
                                 <p>
-                                    <button class="btn my-prop-btn btn-info" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                    <button class="btn my-prop-adv-btn btn-info" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
                                     <i class="fa fa-cog" style={{display: 'inline-block', float: 'left'}}></i>  Advance 
                                     </button>
                                 </p>

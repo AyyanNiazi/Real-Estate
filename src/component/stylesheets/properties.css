@@ -8,10 +8,29 @@
     display: inline-;
 }
 .my-prop-btn:hover{
-    background-color: #0bd3f7;
+    background-color: #0bd3f7; 
     border: 2px solid #0bd3f7
 }
-
+.my-prop-adv-btn{
+    background-color: #1ebbd7;  
+    border: 2px solid ;
+    font-weight: 500;
+    font-size: 1.234em;
+    padding: 4px 10px;
+    transition: 0.3s!important;
+    display: inline;
+}
+.my-prop-adv-btn:hover{
+    background-color: #0bd3f7; 
+    border: 2px solid #0bd3f7
+}
+.my-prop-adv-btn i{
+    position: absolute;
+    top: 0px;
+    left: 5px;
+    margin-right: 30px;
+    padding: auto 20px;
+}
 .sec-prop-2{
     background: #fff;
     height: fit-content;
@@ -19,6 +38,7 @@
     z-index: 1px;
     padding-top: 30px;
     box-shadow: 4px 4px 12px #888;
+    position: relative;
 }
 
 .sec-prop-3{
