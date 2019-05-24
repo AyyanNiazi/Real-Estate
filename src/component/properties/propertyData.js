@@ -43,19 +43,51 @@ class PropertyData extends Component {
 
 
               {value === 0 && <TabContainer>
-
+              <div class='row' > 
                 <div class='col-sm-3 col-xs-12 bg-img-all' >
-                    
+                   <div className=' feature-1 col-lg-7 col-sm-12 col-xs-12' >
+                            <div className='top' >
+                                <button className='feature'> Featured  </button>
+                                <button className='for-rent' > For Rent </button>
+                                <button className='feature-new' > New </button>
+                            </div>
+
+                            <div className='bottom' >
+                                <h5>Modern Appartment With Ocean View</h5>
+                                <p style={{ color: '#fff' }} >44,00000  2 bd 2 ba 1900 sq ft</p>
+                            </div>
+                        </div>
+                </div>
+
+                <div class='col-sm-6 col-xs-12' >
+                    <div class='center-top' > 
+                      <h3>Modern Design villa with ppol and guest house</h3>
+                      <p>598 NW 12 Ave Fort Lauderable Fl 333 </p>
+                    </div>
+
+                  <div  class='center-bottom' >
+                      
+                      <ul class='center-item'>                       
+                        <li>
+                        <span>3</span>
+                        Bedroom
+                        </li>
+                        <li>
+                          <span>1</span>
+                          Bathroom
+                        </li>
+                        <li>
+                          <span>2180</span>
+                          Sq ft
+                        </li>
+                      </ul>
+                  </div>
                 </div>
 
                 <div class='col-sm-3 col-xs-12' >
                     
                 </div>
-
-                <div class='col-sm-3 col-xs-12' >
-                    
                 </div>
-
               </TabContainer>}
 
               {/* For rent Layer */}

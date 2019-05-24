@@ -12,3 +12,15 @@
 .bg-img-out{
 
 }
+
+.center-item li:first-child {
+    padding-left: 0;
+}
+
+.center-item li{
+    font-size: 12px;
+    font-weight: 300;
+    padding: 0 8px;
+    color: #777;
+    border-right: 1px solid #ccc;
+}
